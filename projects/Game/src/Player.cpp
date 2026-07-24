@@ -23,7 +23,6 @@ void Player::OnEnable()
 {
     rb = GetComponent<Rigidbody>(true);
     assert(rb != nullptr);
-
     GetComponent<Collider>(true)->bounciness = 0.0f;
 }
 
