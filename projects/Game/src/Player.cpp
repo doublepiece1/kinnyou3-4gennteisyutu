@@ -99,6 +99,7 @@ void Player::OnCollisionEnter(const Collision& collision)
     {
         MainGame::getInstance()->AddScore(1);
         Destroy(collision.collider->gameObject);
+        MainGame::getInstance()->GameClear();
     }
 }
 void Player::OnCollisionStay(const Collision& collision)

@@ -25,4 +25,6 @@ protected:
     UniDx::TextMesh* scoreTextMesh;
 
     void createMap();
+public:
+    void GameClear();
 };

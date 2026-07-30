@@ -1,5 +1,4 @@
-﻿// CreateDefaultScene.cpp
-// デフォルトのシーンを生成します
+﻿
 
 #include <numbers>
 
@@ -182,4 +181,9 @@ void MainGame::AddScore(int n)
 {
     score += n;
     scoreTextMesh->text = ToString(score);
+}
+
+void MainGame::GameClear()
+{
+    scoreTextMesh->text = u8"ゲームクリア"; 
 }
